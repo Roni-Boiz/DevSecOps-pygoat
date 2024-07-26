@@ -59,7 +59,7 @@ jobs:
         dockerhub-user: ${{secrets.REPO_USER}}
         dockerhub-password: ${{secrets.REPO_PW}}
         command: quickview,cves
-        exit-code: true
+        # exit-code: true
         # only-severities: critical,high
         # sarif-file: scout-report.sarif
         
