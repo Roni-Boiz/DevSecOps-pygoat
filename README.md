@@ -28,9 +28,9 @@ To setup the project on your local machine:
 
 First, Clone the repository using GitHub website or git in Terminal
 ```
-  git clone https://github.com/adeyosemanputra/pygoat.git
+  git clone https://github.com/Roni-Boiz/DevSecOps-pygoat.git
   ### To Download a specific branch
-  git clone -b <branch_name> https://github.com/adeyosemanputra/pygoat.git
+  git clone -b <branch_name> https://github.com/Roni-Boiz/DevSecOps-pygoat.git
 ```
 
 #### Method 1
@@ -66,7 +66,7 @@ First, Clone the repository using GitHub website or git in Terminal
 2. Run `docker-compose up` or `docker-compose up -d`
 
 ### Build Docker Image and Run
-1. Clone the repository  &ensp; `git clone https://github.com/adeyosemanputra/pygoat.git` 
+1. Clone the repository  &ensp; `git clone https://github.com/Roni-Boiz/DevSecOps-pygoat.git` 
 2. Build the docker image from Dockerfile using &ensp; `docker build -f Dockerfile -t pygoat .`
 3. Run the docker image &ensp;`docker run --rm -p 8000:8000 pygoat:latest`
 4. Browse to <http://127.0.0.1:8000> or <http://0.0.0.0:8000> 
