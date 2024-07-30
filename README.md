@@ -21,7 +21,7 @@ Table of Contents
 
 ## Installation
 
-### From Sources
+### Download Sources
 
 To setup the project on your local machine:
 <br>
@@ -54,22 +54,28 @@ First, Clone the repository using GitHub website or git in Terminal
 3. Finally, run the development server `python3 manage.py runserver`.<br>
 4. The project will be available at <http://127.0.0.1:8000> 
 
-### Docker Container
+#### Method 4
+
+##### 1. Using Pre Build Docker Image
 1. Install [Docker](https://www.docker.com)
 2. Run `docker pull pygoat/pygoat` or `docker pull pygoat/pygoat:latest`
 3. Run `docker run --rm -p 8000:8000 pygoat/pygoat:latest`
 4. Browse to <http://127.0.0.1:8000> 
 5. Remove existing image using `docker image rm pygoat/pygoat` and pull again incase of any error
 
-### From Docker-Compose 
-1. Install [Docker](https://www.docker.com)
-2. Run `docker-compose up` or `docker-compose up -d`
+#### 2. Using Own Docker Image
 
-### Build Docker Image and Run
+##### 2.1 Build Docker Image and Run
 1. Clone the repository  &ensp; `git clone https://github.com/Roni-Boiz/DevSecOps-pygoat.git` 
-2. Build the docker image from Dockerfile using &ensp; `docker build -f Dockerfile -t pygoat .`
-3. Run the docker image &ensp;`docker run --rm -p 8000:8000 pygoat:latest`
+2. Build the docker image from Dockerfile using &ensp; `docker build -f Dockerfile -t <dockerhub_username>/pygoat .`
+3. Run the docker image &ensp;`docker run --rm -p 8000:8000 <dockerhub_username>/pygoat`
 4. Browse to <http://127.0.0.1:8000> or <http://0.0.0.0:8000> 
+
+##### 2.2 From Docker-Compose 
+1. Install [Docker](https://www.docker.com)
+2. Run `docker compose up` or `docker compose up -d`
+
+
 
 ### Installation video 
 
