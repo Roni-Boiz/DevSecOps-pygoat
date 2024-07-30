@@ -56,7 +56,7 @@ First, Clone the repository using GitHub website or git in Terminal
 
 #### Method 4
 
-##### 1. Using Pre Build Docker Image
+#### 1. Using Pre Build Docker Image
 1. Install [Docker](https://www.docker.com)
 2. Run `docker pull pygoat/pygoat` or `docker pull pygoat/pygoat:latest`
 3. Run `docker run --rm -p 8000:8000 pygoat/pygoat:latest`
