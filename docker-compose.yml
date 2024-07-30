@@ -11,8 +11,9 @@ services:
       - POSTGRES_PASSWORD=postgres
   web:
     build: .
-    image: pygoat/pygoat
-    command: gunicorn --bind 0.0.0.0:8000 --workers 6 pygoat.wsgi
+    image: don361/pygoat
+    # command: gunicorn --bind 0.0.0.0:8000 --workers 6 pygoat.wsgi
+    command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
     volumes:
@@ -21,8 +22,8 @@ services:
       - migration
       - db
   migration:
-    image: pygoat/pygoat
-    command: python pygoat/manage.py migrate --noinput
+    image: don361/pygoat
+    command: python manage.py migrate --noinput
     volumes:
       - .:/app
     depends_on:
