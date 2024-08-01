@@ -103,6 +103,9 @@ $ python3 uninstaller.py
 ## Solutions 
 <a href="/Solutions/solution.md">Solutions to all challenges</a>
 
+### OWASP Top 10 2021
+[![](./introduction/static/OWASP_Top10_2021.png)](https://www.youtube.com/watch?v=k_C5bNF1VGs "OWASP Top 10 Vulnerabilities")
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
